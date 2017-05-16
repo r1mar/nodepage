@@ -6,8 +6,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
 
-var index = require('./home/route');
-var users = require('./user/route');
+var error = require('./error/route');
+var index = require('./home/router');
+var users = require('./user/router');
 
 var app = express();
 
@@ -40,14 +41,6 @@ app.use(function(req, res, next) {
 });
 
 // error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
-  res.status(err.status || 500);
-  res.render('shared/views/error');
-});
+app.use(error);
 
 module.exports = app;
