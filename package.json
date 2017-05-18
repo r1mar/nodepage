@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./src/bin/www",
-    "test": "node_modules/.bin/jasmine-node src"
+    "test": "node ./src/test.js"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
