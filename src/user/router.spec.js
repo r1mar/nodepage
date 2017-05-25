@@ -1,13 +1,19 @@
+var app = require('../app');
 var request = require("request");
 
 var base_url = "http://localhost:3000"
 
 describe("User router", function () {
 
-  beforeEach(function () {
+  var server;
+
+  beforeEach(function (done) {
+    // starts the server
+    server = app.listen( { port: 3000 }, done);
   });
 
   afterEach(function () {
+    server.close();
   });
 
   describe("GET /user", function () {

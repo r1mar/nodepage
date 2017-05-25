@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./src/bin/www",
-    "test": "./node_modules/.bin/istanbul cover ./src/test.js"
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/jasmine-node/bin/jasmine-node ./src"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
