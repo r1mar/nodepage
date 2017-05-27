@@ -2,6 +2,7 @@
 [![Windows Build][appveyor-image]][appveyor-url]
 [![Linux Build][travis-image]][travis-url]
 [![Test Coverage][coveralls-image]][coveralls-url]
+[![Dependency Status][gemnasium-image]][gemnasium-url]
 
 Simple page with node express
 
@@ -25,4 +26,5 @@ set DEBUG=nodepage:* & npm start
 [travis-url]: https://travis-ci.org/richard-martens/nodepage
 [coveralls-image]: https://img.shields.io/coveralls/richard-martens/nodepage/master.svg
 [coveralls-url]: https://coveralls.io/r/richard-martens/nodepage?branch=master
-
+[gemnasium-image]: https://gemnasium.com/richard-martens/nodepage.svg
+[gemnasium-url]: https://gemnasium.com/richard-martens/nodepage
