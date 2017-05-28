@@ -30,6 +30,10 @@ app.use(sassMiddleware({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+//setup translations
+var i18n = require('i18n');
+app.use(i18n.init);
+
 app.use('/', index);
 app.use('/user', users);
 

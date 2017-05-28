@@ -6,6 +6,9 @@
 
 Simple page with node express
 
+## features
+* multiple languages. Translated in english, german and russia
+
 ## install
 
 ```
