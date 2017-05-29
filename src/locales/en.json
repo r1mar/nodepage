@@ -4,5 +4,6 @@
 	},
 	"user": {
 		"respond with a resource": "respond with a resource"
-	}
+	},
+	"user[\"respond with a resource\"]": "user[\"respond with a resource\"]"
 }

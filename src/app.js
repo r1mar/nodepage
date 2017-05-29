@@ -35,7 +35,7 @@ var i18n = require('i18n');
 i18n.configure({
     locales:['en', 'de', 'ru' ],
     directory: __dirname + '/locales',
-    autoReload: true,
+    //autoReload: true, Unit test did not works with this option
     defaultLocale: 'en',
     objectNotation: true
 });
