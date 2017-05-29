@@ -32,6 +32,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //setup translations
 var i18n = require('i18n');
+i18n.configure({
+    locales:['en'],
+    directory: __dirname + '/locales',
+    autoReload: true,
+    defaultLocale: 'en',
+    objectNotation: true
+});
 app.use(i18n.init);
 
 app.use('/', index);
