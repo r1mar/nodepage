@@ -4,4 +4,11 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    ul
+      li 
+        a(href="/?lang=en") #{__('locales.english')}
+      li 
+        a(href="/?lang=de") #{__('locales.german')}
+      li 
+        a(href="/?lang=en") #{__('locales.russian')}
     block content

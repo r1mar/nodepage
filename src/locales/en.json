@@ -1,9 +1,13 @@
 {
 	"home": {
-		"WelcomeTo": "Welcome to"
+		"welcome to": "Welcome to"
 	},
 	"user": {
 		"respond with a resource": "respond with a resource"
 	},
-	"user[\"respond with a resource\"]": "user[\"respond with a resource\"]"
+	"lokales" : {
+		"english" : "English",
+		"german" : "German",
+		"russian" : "Russian"
+	}
 }

@@ -36,6 +36,7 @@ i18n.configure({
     locales:['en', 'de', 'ru' ],
     directory: __dirname + '/locales',
     //autoReload: true, Unit test did not works with this option
+    cookie: "nodepage-locale",
     defaultLocale: 'en',
     objectNotation: true
 });

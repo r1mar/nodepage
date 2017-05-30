@@ -1,8 +1,13 @@
 {
 	"home": {
-		"WelcomeTo": "Добро пожаловать в"
+		"welcome to": "Добро пожаловать в"
 	},
 	"user": {
 		"respond with a resource": "Отвечать ресурсом"
+	},
+	"lokales" : {
+		"english" : "английский",
+		"german" : "немецкий",
+		"russian" : "русский"
 	}
 }
