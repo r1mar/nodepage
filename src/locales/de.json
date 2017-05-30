@@ -1,13 +1,19 @@
 {
 	"home": {
-		"welcome to": "Willkommen bei"
+		"welcome to": "Willkommen bei",
+		"WelcomeTo": "home.WelcomeTo"
 	},
 	"user": {
 		"respond with a resource": "Mit einer Ressource antworten"
 	},
-	"lokales" : {
-		"english" : "Englisch",
-		"german" : "Deutsch",
-		"russian" : "Russisch"
+	"lokales": {
+		"english": "Englisch",
+		"german": "Deutsch",
+		"russian": "Russisch"
+	},
+	"locales": {
+		"english": "locales.english",
+		"german": "locales.german",
+		"russian": "locales.russian"
 	}
 }
