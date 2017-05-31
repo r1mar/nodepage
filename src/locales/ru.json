@@ -5,7 +5,7 @@
 	"user": {
 		"respond with a resource": "Отвечать ресурсом"
 	},
-	"lokales" : {
+	"locales" : {
 		"english" : "английский",
 		"german" : "немецкий",
 		"russian" : "русский"

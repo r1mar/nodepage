@@ -9,8 +9,15 @@ var sassMiddleware = require('node-sass-middleware');
 var error = require('./error/route');
 var index = require('./home/router');
 var users = require('./user/router');
+var locales = require('./locales/router');
 
 var app = express();
+
+//Shared views middleware
+app.use(function(req, res, next){
+  res.locals.redirectTo = req.originalUrl;
+  next();
+});
 
 // view engine setup
 app.set('views', path.join(__dirname));
@@ -42,6 +49,8 @@ i18n.configure({
 });
 app.use(i18n.init);
 
+//Module routers
+app.use('/locales', locales);
 app.use('/', index);
 app.use('/user', users);
 

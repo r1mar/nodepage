@@ -4,13 +4,13 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    form
-      input(type="hidden", name="redirectTo", value="{redirectTo}")
+    form(action="/locales", method="POST")
+      input(type="hidden", name="redirectTo", value=redirectTo)
       ul
         li 
           button(type="submit" name="lang" value="en") #{__('locales.english')}
         li 
           button(type="submit", name="lang" value="de") #{__('locales.german')}
         li 
-          button(type="submit", name="lang" value="de") #{__('locales.russian')}
+          button(type="submit", name="lang" value="ru") #{__('locales.russian')}
     block content
