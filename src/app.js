@@ -10,14 +10,9 @@ var error = require('./error/route');
 var index = require('./home/router');
 var users = require('./user/router');
 var locales = require('./locales/router');
+var i18n = require('i18n');
 
 var app = express();
-
-//Shared views middleware
-app.use(function(req, res, next){
-  res.locals.redirectTo = req.originalUrl;
-  next();
-});
 
 // view engine setup
 app.set('views', path.join(__dirname));
@@ -35,10 +30,14 @@ app.use(sassMiddleware({
   indentedSyntax: true, // true = .sass and false = .scss
   sourceMap: true
 }));
+
+//Setup dirs with static files
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/js', express.static(path.join(__dirname, '../node_modules/jquery/dist')));
+app.use(express.static(path.join(__dirname, '../node_modules/tether/dist')));
+app.use(express.static(path.join(__dirname, '../node_modules/bootstrap/dist')));
 
 //setup translations
-var i18n = require('i18n');
 i18n.configure({
     locales:['en', 'de', 'ru' ],
     directory: __dirname + '/locales',
@@ -48,6 +47,12 @@ i18n.configure({
     objectNotation: true
 });
 app.use(i18n.init);
+
+//Shared views middleware
+app.use(function(req, res, next){
+  res.locals.lang = req.getLocale();
+  next();
+});
 
 //Module routers
 app.use('/locales', locales);

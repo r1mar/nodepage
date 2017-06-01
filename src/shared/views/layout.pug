@@ -1,16 +1,35 @@
 doctype html
-html
+html(lang=lang)
   head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    
     title= title
+    
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='stylesheets/famfamfam-flags.css')
+  
   body
     form(action="/locales", method="POST")
-      input(type="hidden", name="redirectTo", value=redirectTo)
       ul
-        li 
-          button(type="submit" name="lang" value="en") #{__('locales.english')}
-        li 
-          button(type="submit", name="lang" value="de") #{__('locales.german')}
-        li 
-          button(type="submit", name="lang" value="ru") #{__('locales.russian')}
+        if lang != 'en'
+          li 
+            button(type="submit" name="lang" value="en") 
+              i.famfamfam-flag-gb 
+              span.sr-only #{__('locales.english')}
+        if lang != 'de'
+          li 
+            button(type="submit", name="lang" value="de") 
+              i.famfamfam-flag-de 
+              span.sr-only  #{__('locales.german')}
+        if lang != 'ru'
+          li 
+            button(type="submit", name="lang" value="ru") 
+              i.famfamfam-flag-ru 
+              span.sr-only  #{__('locales.russian')}
+
     block content
+
+    script(src='js/jquery.min.js')
+    script(src='js/tether.min.js')
+    script(src='js/bootstrap.min.js')
