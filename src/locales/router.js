@@ -5,6 +5,8 @@ var router = express.Router();
 var controller = require('./controller');
 
 /* GET home page. */
-router.post('/', controller.setLocale);
+router.post('/en', controller.setEnglish);
+router.post('/de', controller.setGerman);
+router.post('/ru', controller.setRussian);
 
 module.exports = router;
