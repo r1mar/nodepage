@@ -9,13 +9,22 @@ html(lang=lang)
     link(rel='stylesheet', href='/stylesheets/style.css')
   
   body
-    form(method="POST")
-      if lang != 'en'
-        input(type="image" src="images/gb.png", alt=__('locales.english'), formaction="/locales/en") 
-      if lang != 'de'
-        input(type="image" src="images/de.png", alt=__('locales.german'), formaction="/locales/de") 
-      if lang != 'ru'
-        input(type="image" src="images/ru.png", alt=__('locales.russian'), formaction="/locales/ru") 
+    nav.navbar.navbar-toggleable-md.navbar-light.bg-faded  
+      button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      a.navbar-brand(href='#') #{__('shared.Brand')}
+
+      .collapse.navbar-collapse#navbarSupportedContent
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='#') #{__('home.Home')}
+        form.form-inline.my-2.my-lg-0(method="POST")
+          if lang != 'en'
+            input(type="image" src="images/gb.png", alt=__('locales.english'), formaction="/locales/en") 
+          if lang != 'de'
+            input(type="image" src="images/de.png", alt=__('locales.german'), formaction="/locales/de") 
+          if lang != 'ru'
+            input(type="image" src="images/ru.png", alt=__('locales.russian'), formaction="/locales/ru") 
 
     block content
 
