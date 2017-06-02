@@ -1,13 +1,14 @@
 {
 	"home": {
-		"welcome to": "Добро пожаловать в"
+		"welcome to": "Добро пожаловать в",
+		"Home": "Главная"
 	},
 	"user": {
 		"respond with a resource": "Отвечать ресурсом"
 	},
-	"locales" : {
-		"english" : "английский",
-		"german" : "немецкий",
-		"russian" : "русский"
+	"locales": {
+		"english": "английский",
+		"german": "немецкий",
+		"russian": "русский"
 	}
 }

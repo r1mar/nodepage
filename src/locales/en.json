@@ -1,13 +1,14 @@
 {
 	"home": {
-		"welcome to": "Welcome to"
+		"welcome to": "Welcome to",
+		"Home": "Home"
 	},
 	"user": {
 		"respond with a resource": "respond with a resource"
 	},
-	"locales" : {
-		"english" : "English",
-		"german" : "German",
-		"russian" : "Russian"
+	"locales": {
+		"english": "English",
+		"german": "German",
+		"russian": "Russian"
 	}
 }

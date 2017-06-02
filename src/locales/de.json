@@ -1,6 +1,7 @@
 {
 	"home": {
-		"welcome to": "Willkommen bei"
+		"welcome to": "Willkommen bei",
+		"Home": "Startseite"
 	},
 	"user": {
 		"respond with a resource": "Mit einer Ressource antworten"
