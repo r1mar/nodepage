@@ -16,10 +16,18 @@ html(lang=lang)
 
       .collapse.navbar-collapse#navbarSupportedContent
         ul.navbar-nav.mr-auto
-          li.nav-item.active
-            a.nav-link(href='/') #{__('home.Home')}
-          li.nav-item
-            a.nav-link(href='/contact') #{__('home.contact')}
+          if originalUrl == '/'
+            li.nav-item.active
+              a.nav-link(href='/') #{__('home.Home')}
+          else
+            li.nav-item
+              a.nav-link(href='/') #{__('home.Home')}
+          if originalUrl == '/contact'
+            li.nav-item.active
+              a.nav-link(href='/contact') #{__('home.contact')}
+          else
+            li.nav-item
+              a.nav-link(href='/contact') #{__('home.contact')}
         form.form-inline.my-2.my-lg-0(method="POST")
           if lang != 'en'
             input(type="image" src="images/gb.png", alt=__('locales.english'), formaction="/locales/en") 

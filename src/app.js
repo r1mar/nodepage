@@ -48,6 +48,7 @@ app.use(i18n.init);
 //Shared views middleware
 app.use(function(req, res, next){
   res.locals.lang = req.getLocale();
+  res.locals.originalUrl = req.originalUrl;
   next();
 });
 
