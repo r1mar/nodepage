@@ -1,7 +1,8 @@
 {
 	"home": {
 		"welcome to": "Welcome to",
-		"Home": "Home"
+		"Home": "Home",
+		"contact": "contact"
 	},
 	"user": {
 		"respond with a resource": "respond with a resource"
@@ -10,5 +11,6 @@
 		"english": "English",
 		"german": "German",
 		"russian": "Russian"
-	}
+	},
+	"contact": "contact"
 }

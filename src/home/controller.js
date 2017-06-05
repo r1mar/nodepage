@@ -1,7 +1,12 @@
 'use strict';
 
-var model = require('./index.model');
+var indexModel = require('./index.model'),
+    contactModel = require('./contact.model');
 
 exports.index = function(req, res, next) {
-  res.render('home/index', model);
+  res.render('home/index', indexModel);
+};
+
+exports.contact = function(req, res, next) {
+  res.render('home/contact', contactModel);
 };

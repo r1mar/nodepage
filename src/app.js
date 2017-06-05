@@ -7,9 +7,6 @@ var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
 
 var error = require('./error/route');
-var index = require('./home/router');
-var users = require('./user/router');
-var locales = require('./locales/router');
 var i18n = require('i18n');
 
 var app = express();
@@ -55,8 +52,12 @@ app.use(function(req, res, next){
 });
 
 //Module routers
+var home = require('./home/router');
+var users = require('./user/router');
+var locales = require('./locales/router');
+
 app.use('/locales', locales);
-app.use('/', index);
+app.use('/', home);
 app.use('/user', users);
 
 // catch 404 and forward to error handler

@@ -1,7 +1,8 @@
 {
 	"home": {
 		"welcome to": "Добро пожаловать в",
-		"Home": "Главная"
+		"Home": "Главная",
+		"contact": "контакт"
 	},
 	"user": {
 		"respond with a resource": "Отвечать ресурсом"
