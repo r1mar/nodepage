@@ -2,7 +2,8 @@
 	"home": {
 		"welcome to": "Добро пожаловать в",
 		"Home": "Главная",
-		"contact": "контакт"
+		"contact": "контакт",
+		"Responsible for the content of this website": "Ответственный за содержание этого сайта"
 	},
 	"user": {
 		"respond with a resource": "Отвечать ресурсом"

@@ -2,7 +2,8 @@
 	"home": {
 		"welcome to": "Willkommen bei",
 		"Home": "Startseite",
-		"contact": "Kontakt"
+		"contact": "Kontakt",
+		"Responsible for the content of this website": "Verantwortlich für den Inhalt dieser Webseite"
 	},
 	"user": {
 		"respond with a resource": "Mit einer Ressource antworten"

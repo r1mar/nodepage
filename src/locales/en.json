@@ -2,7 +2,8 @@
 	"home": {
 		"welcome to": "Welcome to",
 		"Home": "Home",
-		"contact": "contact"
+		"contact": "contact",
+		"Responsible for the content of this website": "Responsible for the content of this website"
 	},
 	"user": {
 		"respond with a resource": "respond with a resource"
