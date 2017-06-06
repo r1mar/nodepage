@@ -17,8 +17,16 @@ describe("Home router", function () {
   });
 
   describe("GET /", function () {
-    it("returns status code 200", function (done) {
+    it("route returns status code 200", function (done) {
       request.get(base_url, function (error, response, body) {
+        expect(response.statusCode).toBe(200);
+        done();
+      });
+    });
+
+  describe("GET /contact", function () {
+    it("contacts returns status code 200", function (done) {
+      request.get(base_url + '/contact', function (error, response, body) {
         expect(response.statusCode).toBe(200);
         done();
       });
