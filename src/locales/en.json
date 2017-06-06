@@ -12,5 +12,6 @@
 		"german": "German",
 		"russian": "Russian"
 	},
-	"contact": "contact"
+	"contact": "contact",
+	"user[\"respond with a resource\"]": "user[\"respond with a resource\"]"
 }

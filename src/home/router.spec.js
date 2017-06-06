@@ -23,6 +23,7 @@ describe("Home router", function () {
         done();
       });
     });
+  });
 
   describe("GET /contact", function () {
     it("contacts returns status code 200", function (done) {
