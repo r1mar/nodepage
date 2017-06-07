@@ -3,7 +3,10 @@
 		"welcome to": "Добро пожаловать в",
 		"Home": "Главная",
 		"contact": "контакт",
-		"Responsible for the content of this website": "Ответственный за содержание этого сайта"
+		"Responsible for the content of this website": "Ответственный за содержание этого сайта",
+		"Email": "эмаль",
+		"Tax-ID": "Tax ID",
+		"Disclaimer": "home.Disclaimer"
 	},
 	"user": {
 		"respond with a resource": "Отвечать ресурсом"

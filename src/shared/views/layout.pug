@@ -1,4 +1,12 @@
 doctype html
+nav-item(url, label)
+  if originalUrl == #{url}
+    li.nav-item.active
+      a.nav-link(href=#{url}) #{label}
+  else
+    li.nav-item
+      a.nav-link(href=#{url}) #{label}
+
 html(lang=lang)
   head
     meta(charset='utf-8')
@@ -16,18 +24,8 @@ html(lang=lang)
 
       .collapse.navbar-collapse#navbarSupportedContent
         ul.navbar-nav.mr-auto
-          if originalUrl == '/'
-            li.nav-item.active
-              a.nav-link(href='/') #{__('home.Home')}
-          else
-            li.nav-item
-              a.nav-link(href='/') #{__('home.Home')}
-          if originalUrl == '/contact'
-            li.nav-item.active
-              a.nav-link(href='/contact') #{__('home.contact')}
-          else
-            li.nav-item
-              a.nav-link(href='/contact') #{__('home.contact')}
+          +nav-item('/', #{__('home.Home')})
+          +nav-item('/contact', #{__('home.contact')})
         form.form-inline.my-2.my-lg-0(method="POST")
           if lang != 'en'
             input(type="image" src="images/gb.png", alt=__('locales.english'), formaction="/locales/en") 
@@ -37,6 +35,9 @@ html(lang=lang)
             input(type="image" src="images/ru.png", alt=__('locales.russian'), formaction="/locales/ru") 
 
     block content
+
+    uline
+    
 
     script(src='js/jquery.min.js')
     script(src='js/tether.min.js')

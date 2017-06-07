@@ -3,7 +3,10 @@
 		"welcome to": "Welcome to",
 		"Home": "Home",
 		"contact": "contact",
-		"Responsible for the content of this website": "Responsible for the content of this website"
+		"Responsible for the content of this website": "Responsible for the content of this website",
+		"Email": "E-mail",
+		"Tax-ID": "Tax ID",
+		"Disclaimer": "home.Disclaimer"
 	},
 	"user": {
 		"respond with a resource": "respond with a resource"
@@ -12,7 +15,5 @@
 		"english": "English",
 		"german": "German",
 		"russian": "Russian"
-	},
-	"contact": "contact",
-	"user[\"respond with a resource\"]": "user[\"respond with a resource\"]"
+	}
 }
