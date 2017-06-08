@@ -1,12 +1,6 @@
-doctype html
-nav-item(url, label)
-  if originalUrl == #{url}
-    li.nav-item.active
-      a.nav-link(href=#{url}) #{label}
-  else
-    li.nav-item
-      a.nav-link(href=#{url}) #{label}
+include mixins.pug
 
+doctype html
 html(lang=lang)
   head
     meta(charset='utf-8')
@@ -24,19 +18,23 @@ html(lang=lang)
 
       .collapse.navbar-collapse#navbarSupportedContent
         ul.navbar-nav.mr-auto
-          +nav-item('/', #{__('home.Home')})
-          +nav-item('/contact', #{__('home.contact')})
+          +nav-item('/', __('home.Home'))
+          +nav-item('/contact', __('home.contact'))
         form.form-inline.my-2.my-lg-0(method="POST")
           if lang != 'en'
-            input(type="image" src="images/gb.png", alt=__('locales.english'), formaction="/locales/en") 
+            input.flag(type="image" src="images/gb.png", alt=__('locales.english'), formaction="/locales/en") 
           if lang != 'de'
-            input(type="image" src="images/de.png", alt=__('locales.german'), formaction="/locales/de") 
+            input.flag(type="image" src="images/de.png", alt=__('locales.german'), formaction="/locales/de") 
           if lang != 'ru'
-            input(type="image" src="images/ru.png", alt=__('locales.russian'), formaction="/locales/ru") 
+            input.flag(type="image" src="images/ru.png", alt=__('locales.russian'), formaction="/locales/ru") 
 
     block content
 
-    uline
+    hr
+    footer.container
+      .row.justify-content-center
+        .col-xs-2
+          +a('/imprint', __('home.imprint'))
     
 
     script(src='js/jquery.min.js')

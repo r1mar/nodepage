@@ -34,4 +34,13 @@ describe("Home router", function () {
     });
   });
 
+  describe("GET /imprint", function () {
+    it("imprint returns status code 200", function (done) {
+      request.get(base_url + '/imprint', function (error, response, body) {
+        expect(response.statusCode).toBe(200);
+        done();
+      });
+    });
+  });
+
 });
