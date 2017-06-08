@@ -7,7 +7,9 @@
 Simple page with node express
 
 ## features
-* multiple languages. Translated in english, german and russia
+* multiple languages. Translated in english(not complete), german and russia(not complete)
+* language ca be switched
+* Pages: home, contact and imprint
 
 ## install
 
