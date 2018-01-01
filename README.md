@@ -13,6 +13,9 @@ Simple page with node express
 
 ## install
 
+Requirements:
+* Node >= 4.0
+
 ```
 git clone https://github.com/richard-martens/nodepage.git
 
