@@ -23,7 +23,8 @@ npm install
 
 ```
 set DEBUG=nodepage:* & npm start
-```                 
+```
+Start your browser and use the address `localhost:3000`
 
 [appveyor-image]: https://img.shields.io/appveyor/ci/richard-martens/nodepage/master.svg?label=windows
 [appveyor-url]: https://ci.appveyor.com/project/richard-martens/nodepage
